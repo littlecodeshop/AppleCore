@@ -7,10 +7,37 @@
 
 import Foundation
 
+struct CPU6502 {
+    
+    var PC : UInt16 // 16 bits program counter
+    var AC : UInt8  // Accumulator
+    var X  : UInt8  // X register
+    var Y  : UInt8  // Y register
+    var SP : UInt8  // Stack pointer
+    var ST : UInt8  // Status register [NV-BDIZC]
+    
+    
+    
+    init() {
+        SP     = 0xFF;
+        AC     = 0x00;
+        X      = 0x00;
+        Y      = 0x00;
+        ST     = 0x00;
+        PC     = 0xFF00; // will start running woz monitor
+    }
+    
+    func step() {
+        
+    }
+    
+}
+
 class AppleOne {
     
     var ram : Data
     var rom : Data
+    var cpu = CPU6502()
     
     func write(_ address: UInt16, value: UInt8){
         switch address {
