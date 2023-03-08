@@ -18,7 +18,8 @@ https://www.masswerk.at/6502/6502_instruction_set.html
 
 # ROM 
 
-256 bytes with Woz monitor, so that thing would boot up with a prompt ready for inputs. Looks like the rom content source is available  
+256 bytes with Woz monitor, so that thing would boot up with a prompt ready for inputs. 
+Looks like the rom content source is available  
 
 
 # Test 

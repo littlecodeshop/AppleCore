@@ -7,9 +7,11 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             VStack {
-                ForEach(apple1.rom.indices, id :\.self){ i in
-                    Text("\(String(format:"%02X",i)) \(String(format:"%02X", apple1.rom[i]))")
-                }
+               Button(action: {
+                   apple1.cpu.singleStep()
+               }) {
+                   Text("Step")
+               }
                 
             }
         }

@@ -16,6 +16,9 @@
 		EA2CAA9529B4AE130025A71E /* AppleCoreUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2CAA9429B4AE130025A71E /* AppleCoreUITestsLaunchTests.swift */; };
 		EA2CAAA229B4B1180025A71E /* AppleOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2CAAA129B4B1180025A71E /* AppleOne.swift */; };
 		EAC4CAF729B4FAE600DE3E99 /* woz.bin in Resources */ = {isa = PBXBuildFile; fileRef = EAC4CAF629B4FAE600DE3E99 /* woz.bin */; };
+		EAC4CAFB29B62B9900DE3E99 /* CPU6502.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC4CAFA29B62B9900DE3E99 /* CPU6502.swift */; };
+		EAC4CAFD29B64D8400DE3E99 /* opcodes.json in Resources */ = {isa = PBXBuildFile; fileRef = EAC4CAFC29B64D8400DE3E99 /* opcodes.json */; };
+		EAC4CB0129B71F2000DE3E99 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EAC4CB0029B71F2000DE3E99 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		EA2CAA9429B4AE130025A71E /* AppleCoreUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleCoreUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EA2CAAA129B4B1180025A71E /* AppleOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleOne.swift; sourceTree = "<group>"; };
 		EAC4CAF629B4FAE600DE3E99 /* woz.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = woz.bin; sourceTree = SOURCE_ROOT; };
+		EAC4CAFA29B62B9900DE3E99 /* CPU6502.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU6502.swift; sourceTree = "<group>"; };
+		EAC4CAFC29B64D8400DE3E99 /* opcodes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = opcodes.json; sourceTree = "<group>"; };
+		EAC4CB0029B71F2000DE3E99 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 		EA2CAA6B29B4AE100025A71E = {
 			isa = PBXGroup;
 			children = (
+				EAC4CB0029B71F2000DE3E99 /* README.md */,
 				EA2CAA7629B4AE100025A71E /* AppleCore */,
 				EA2CAA8729B4AE130025A71E /* AppleCoreTests */,
 				EA2CAA9129B4AE130025A71E /* AppleCoreUITests */,
@@ -104,6 +111,7 @@
 				EA2CAA7929B4AE100025A71E /* ContentView.swift */,
 				EA2CAA7B29B4AE130025A71E /* Assets.xcassets */,
 				EA2CAA7D29B4AE130025A71E /* Preview Content */,
+				EAC4CAFA29B62B9900DE3E99 /* CPU6502.swift */,
 			);
 			path = AppleCore;
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				EAC4CAF629B4FAE600DE3E99 /* woz.bin */,
+				EAC4CAFC29B64D8400DE3E99 /* opcodes.json */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -246,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC4CAF729B4FAE600DE3E99 /* woz.bin in Resources */,
+				EAC4CAFD29B64D8400DE3E99 /* opcodes.json in Resources */,
+				EAC4CB0129B71F2000DE3E99 /* README.md in Resources */,
 				EA2CAA7F29B4AE130025A71E /* Preview Assets.xcassets in Resources */,
 				EA2CAA7C29B4AE130025A71E /* Assets.xcassets in Resources */,
 			);
@@ -273,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA2CAAA229B4B1180025A71E /* AppleOne.swift in Sources */,
+				EAC4CAFB29B62B9900DE3E99 /* CPU6502.swift in Sources */,
 				EA2CAA7A29B4AE100025A71E /* ContentView.swift in Sources */,
 				EA2CAA7829B4AE100025A71E /* AppleCoreApp.swift in Sources */,
 			);

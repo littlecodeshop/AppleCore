@@ -7,31 +7,9 @@
 
 import Foundation
 
-struct CPU6502 {
-    
-    var PC : UInt16 // 16 bits program counter
-    var AC : UInt8  // Accumulator
-    var X  : UInt8  // X register
-    var Y  : UInt8  // Y register
-    var SP : UInt8  // Stack pointer
-    var ST : UInt8  // Status register [NV-BDIZC]
-    
-    
-    
-    init() {
-        SP     = 0xFF;
-        AC     = 0x00;
-        X      = 0x00;
-        Y      = 0x00;
-        ST     = 0x00;
-        PC     = 0xFF00; // will start running woz monitor
-    }
-    
-    func step() {
-        
-    }
-    
-}
+
+
+
 
 class AppleOne {
     
@@ -72,6 +50,11 @@ class AppleOne {
         ram = Data(count: 0xFFF) // create an array of 4kb
         let filepath = Bundle.main.path(forResource: "woz", ofType: "bin")!
         rom = try! Data(contentsOf: URL(fileURLWithPath: filepath)) // load the woz monitor
-        
+        cpu.fetch = { address in
+            return self.read(address)
+        }
+        cpu.store = {address, value in
+            self.write(address, value: value)
+        }
     }
 }
