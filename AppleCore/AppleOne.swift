@@ -11,8 +11,9 @@ import Foundation
 
 
 
-class AppleOne {
+class AppleOne : ObservableObject {
     
+    var debugString = [String]()
     var ram : Data
     var rom : Data
     var cpu = CPU6502()

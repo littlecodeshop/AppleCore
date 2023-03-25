@@ -4,52 +4,52 @@
       "description" : "Add with Carry",
       "mnemonic" : "ADC",
       "code" : "0x69",
-      "mode" : "Immediate"
+      "mode" : "imm"
    },
    {
       "code" : "0x65",
       "mnemonic" : "ADC",
       "bytes" : 2,
       "description" : "Add with Carry",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
       "description" : "Add with Carry",
       "bytes" : 2,
       "code" : "0x75",
       "mnemonic" : "ADC",
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
       "mnemonic" : "ADC",
       "code" : "0x6D",
       "bytes" : 3,
       "description" : "Add with Carry",
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
-      "mode" : "Absolute,X",
+      "mode" : "absX",
       "mnemonic" : "ADC",
       "code" : "0x7D",
       "bytes" : 3,
       "description" : "Add with Carry"
    },
    {
-      "mode" : "Absolute,Y",
+      "mode" : "absY",
       "mnemonic" : "ADC",
       "code" : "0x79",
       "description" : "Add with Carry",
       "bytes" : 3
    },
    {
-      "mode" : "(Indirect,X)",
+      "mode" : "xInd",
       "description" : "Add with Carry",
       "bytes" : 2,
       "code" : "0x61",
       "mnemonic" : "ADC"
    },
    {
-      "mode" : "(Indirect),Y",
+      "mode" : "indY",
       "bytes" : 2,
       "description" : "Add with Carry",
       "mnemonic" : "ADC",
@@ -60,10 +60,10 @@
       "description" : "Logical AND",
       "mnemonic" : "AND",
       "code" : "0x29",
-      "mode" : "Immediate"
+      "mode" : "imm"
    },
    {
-      "mode" : "ZeroPage",
+      "mode" : "zpg",
       "mnemonic" : "AND",
       "code" : "0x25",
       "bytes" : 2,
@@ -74,10 +74,10 @@
       "description" : "Logical AND",
       "mnemonic" : "AND",
       "code" : "0x35",
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "code" : "0x2D",
       "mnemonic" : "AND",
       "description" : "Logical AND",
@@ -88,10 +88,10 @@
       "bytes" : 3,
       "mnemonic" : "AND",
       "code" : "0x3D",
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
-      "mode" : "Absolute,Y",
+      "mode" : "absY",
       "bytes" : 3,
       "description" : "Logical AND",
       "code" : "0x39",
@@ -102,59 +102,59 @@
       "bytes" : 2,
       "code" : "0x21",
       "mnemonic" : "AND",
-      "mode" : "(Indirect,X)"
+      "mode" : "xInd"
    },
    {
       "mnemonic" : "AND",
       "code" : "0x31",
       "description" : "Logical AND",
       "bytes" : 2,
-      "mode" : "(Indirect),Y"
+      "mode" : "indY"
    },
    {
       "description" : "Arithmetic Shift Left",
       "bytes" : 1,
       "code" : "0x0A",
       "mnemonic" : "ASL",
-      "mode" : "Accumulator"
+      "mode" : "acc"
    },
    {
       "code" : "0x06",
       "mnemonic" : "ASL",
       "bytes" : 2,
       "description" : "Arithmetic Shift Left",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
       "description" : "Arithmetic Shift Left",
       "bytes" : 2,
       "mnemonic" : "ASL",
       "code" : "0x16",
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "description" : "Arithmetic Shift Left",
       "bytes" : 3,
       "mnemonic" : "ASL",
       "code" : "0x0E"
    },
    {
-      "mode" : "Absolute,X",
+      "mode" : "absX",
       "description" : "Arithmetic Shift Left",
       "bytes" : 3,
       "mnemonic" : "ASL",
       "code" : "0x1E"
    },
    {
-      "mode" : "Relative",
+      "mode" : "rel",
       "bytes" : 2,
       "description" : "Branch if Carry Clear",
       "code" : "0x90",
       "mnemonic" : "BCC"
    },
    {
-      "mode" : "Relative",
+      "mode" : "rel",
       "bytes" : 2,
       "description" : "Branch if Carry Set",
       "mnemonic" : "BCS",
@@ -165,24 +165,24 @@
       "description" : "Branch if Equal",
       "mnemonic" : "BEQ",
       "code" : "0xF0",
-      "mode" : "Relative"
+      "mode" : "rel"
    },
    {
       "code" : "0x24",
       "mnemonic" : "BIT",
       "bytes" : 2,
       "description" : "Bit Test",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "description" : "Bit Test",
       "bytes" : 3,
       "mnemonic" : "BIT",
       "code" : "0x2C"
    },
    {
-      "mode" : "Relative",
+      "mode" : "rel",
       "description" : "Branch if Minus",
       "bytes" : 2,
       "mnemonic" : "BMI",
@@ -193,10 +193,10 @@
       "mnemonic" : "BNE",
       "description" : "Branch if Not Equal",
       "bytes" : 2,
-      "mode" : "Relative"
+      "mode" : "rel"
    },
    {
-      "mode" : "Relative",
+      "mode" : "rel",
       "code" : "0x10",
       "mnemonic" : "BPL",
       "description" : "Branch if Positive",
@@ -207,24 +207,24 @@
       "code" : "0x00",
       "description" : "Force Interrupt",
       "bytes" : 1,
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
-      "mode" : "Relative",
+      "mode" : "rel",
       "description" : "Branch if Overflow Clear",
       "bytes" : 2,
       "code" : "0x50",
       "mnemonic" : "BVC"
    },
    {
-      "mode" : "Relative",
+      "mode" : "rel",
       "description" : "Branch if Overflow Set",
       "bytes" : 2,
       "mnemonic" : "BVS",
       "code" : "0x70"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "code" : "0x18",
       "mnemonic" : "CLC",
       "bytes" : 1,
@@ -235,17 +235,17 @@
       "description" : "Clear Decimal Mode",
       "mnemonic" : "CLD",
       "code" : "0xD8",
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "bytes" : 1,
       "description" : "Clear Interrupt Disable",
       "code" : "0x58",
       "mnemonic" : "CLI"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "description" : "Clear Overflow Flag",
       "bytes" : 1,
       "code" : "0xB8",
@@ -256,10 +256,10 @@
       "mnemonic" : "CMP",
       "bytes" : 2,
       "description" : "Compare",
-      "mode" : "Immediate"
+      "mode" : "imm"
    },
    {
-      "mode" : "ZeroPage",
+      "mode" : "zpg",
       "bytes" : 2,
       "description" : "Compare",
       "code" : "0xC5",
@@ -270,10 +270,10 @@
       "mnemonic" : "CMP",
       "bytes" : 2,
       "description" : "Compare",
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "code" : "0xCD",
       "mnemonic" : "CMP",
       "bytes" : 3,
@@ -284,52 +284,52 @@
       "code" : "0xDD",
       "bytes" : 3,
       "description" : "Compare",
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
       "code" : "0xD9",
       "mnemonic" : "CMP",
       "bytes" : 3,
       "description" : "Compare",
-      "mode" : "Absolute,Y"
+      "mode" : "absY"
    },
    {
       "mnemonic" : "CMP",
       "code" : "0xC1",
       "bytes" : 2,
       "description" : "Compare",
-      "mode" : "(Indirect,X)"
+      "mode" : "xInd"
    },
    {
       "mnemonic" : "CMP",
       "code" : "0xD1",
       "bytes" : 2,
       "description" : "Compare",
-      "mode" : "(Indirect),Y"
+      "mode" : "indY"
    },
    {
-      "mode" : "Immediate",
+      "mode" : "imm",
       "mnemonic" : "CPX",
       "code" : "0xE0",
       "description" : "Compare X Register",
       "bytes" : 2
    },
    {
-      "mode" : "ZeroPage",
+      "mode" : "zpg",
       "bytes" : 2,
       "description" : "Compare X Register",
       "code" : "0xE4",
       "mnemonic" : "CPX"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "description" : "Compare X Register",
       "bytes" : 3,
       "mnemonic" : "CPX",
       "code" : "0xEC"
    },
    {
-      "mode" : "Immediate",
+      "mode" : "imm",
       "mnemonic" : "CPY",
       "code" : "0xC0",
       "bytes" : 2,
@@ -340,52 +340,52 @@
       "mnemonic" : "CPY",
       "bytes" : 2,
       "description" : "Compare Y Register",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
       "bytes" : 3,
       "description" : "Compare Y Register",
       "mnemonic" : "CPY",
       "code" : "0xCC",
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
       "bytes" : 2,
       "description" : "Decrement Memory",
       "mnemonic" : "DEC",
       "code" : "0xC6",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
       "code" : "0xD6",
       "mnemonic" : "DEC",
       "description" : "Decrement Memory",
       "bytes" : 2,
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
       "bytes" : 3,
       "description" : "Decrement Memory",
       "mnemonic" : "DEC",
       "code" : "0xCE",
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
       "mnemonic" : "DEC",
       "code" : "0xDE",
       "description" : "Decrement Memory",
       "bytes" : 3,
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
       "description" : "Decrement X Register",
       "bytes" : 1,
       "mnemonic" : "DEX",
       "code" : "0xCA",
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "bytes" : 1,
       "description" : "Decrement Y Register",
       "code" : "0x88",
@@ -396,24 +396,24 @@
       "mnemonic" : "EOR",
       "description" : "Exclusive OR",
       "bytes" : 2,
-      "mode" : "Immediate"
+      "mode" : "imm"
    },
    {
       "code" : "0x45",
       "mnemonic" : "EOR",
       "bytes" : 2,
       "description" : "Exclusive OR",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
-      "mode" : "ZeroPage,X",
+      "mode" : "zpgX",
       "bytes" : 2,
       "description" : "Exclusive OR",
       "mnemonic" : "EOR",
       "code" : "0x55"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "mnemonic" : "EOR",
       "code" : "0x4D",
       "bytes" : 3,
@@ -424,24 +424,24 @@
       "bytes" : 3,
       "mnemonic" : "EOR",
       "code" : "0x5D",
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
-      "mode" : "Absolute,Y",
+      "mode" : "absY",
       "mnemonic" : "EOR",
       "code" : "0x59",
       "description" : "Exclusive OR",
       "bytes" : 3
    },
    {
-      "mode" : "(Indirect,X)",
+      "mode" : "xInd",
       "description" : "Exclusive OR",
       "bytes" : 2,
       "mnemonic" : "EOR",
       "code" : "0x41"
    },
    {
-      "mode" : "(Indirect),Y",
+      "mode" : "indY",
       "bytes" : 2,
       "description" : "Exclusive OR",
       "code" : "0x51",
@@ -452,17 +452,17 @@
       "description" : "Increment Memory",
       "mnemonic" : "INC",
       "code" : "0xE6",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
       "code" : "0xF6",
       "mnemonic" : "INC",
       "description" : "Increment Memory",
       "bytes" : 2,
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "bytes" : 3,
       "description" : "Increment Memory",
       "code" : "0xEE",
@@ -473,10 +473,10 @@
       "mnemonic" : "INC",
       "bytes" : 3,
       "description" : "Increment Memory",
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "code" : "0xE8",
       "mnemonic" : "INX",
       "description" : "Increment X Register",
@@ -487,24 +487,24 @@
       "bytes" : 1,
       "mnemonic" : "INY",
       "code" : "0xC8",
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "description" : "Jump",
       "bytes" : 3,
       "mnemonic" : "JMP",
       "code" : "0x4C"
    },
    {
-      "mode" : "Indirect ",
+      "mode" : "ind",
       "code" : "0x6C",
       "mnemonic" : "JMP",
       "description" : "Jump",
       "bytes" : 3
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "mnemonic" : "JSR",
       "code" : "0x20",
       "description" : "Jump to Subroutine",
@@ -515,10 +515,10 @@
       "bytes" : 2,
       "mnemonic" : "LDA",
       "code" : "0xA9",
-      "mode" : "Immediate"
+      "mode" : "imm"
    },
    {
-      "mode" : "ZeroPage",
+      "mode" : "zpg",
       "mnemonic" : "LDA",
       "code" : "0xA5",
       "bytes" : 2,
@@ -529,24 +529,24 @@
       "mnemonic" : "LDA",
       "description" : "Load Accumulator",
       "bytes" : 2,
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
       "mnemonic" : "LDA",
       "code" : "0xAD",
       "bytes" : 3,
       "description" : "Load Accumulator",
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
-      "mode" : "Absolute,X",
+      "mode" : "absX",
       "bytes" : 3,
       "description" : "Load Accumulator",
       "code" : "0xBD",
       "mnemonic" : "LDA"
    },
    {
-      "mode" : "Absolute,Y",
+      "mode" : "absY",
       "mnemonic" : "LDA",
       "code" : "0xB9",
       "bytes" : 3,
@@ -557,10 +557,10 @@
       "mnemonic" : "LDA",
       "description" : "Load Accumulator",
       "bytes" : 2,
-      "mode" : "(Indirect,X)"
+      "mode" : "xInd"
    },
    {
-      "mode" : "(Indirect),Y",
+      "mode" : "indY",
       "mnemonic" : "LDA",
       "code" : "0xB1",
       "description" : "Load Accumulator",
@@ -571,24 +571,24 @@
       "bytes" : 2,
       "mnemonic" : "LDX",
       "code" : "0xA2",
-      "mode" : "Immediate"
+      "mode" : "imm"
    },
    {
       "description" : "Load X Register",
       "bytes" : 2,
       "mnemonic" : "LDX",
       "code" : "0xA6",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
       "description" : "Load X Register",
       "bytes" : 2,
       "mnemonic" : "LDX",
       "code" : "0xB6",
-      "mode" : "ZeroPage,Y"
+      "mode" : "zpgY"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "code" : "0xAE",
       "mnemonic" : "LDX",
       "bytes" : 3,
@@ -599,10 +599,10 @@
       "description" : "Load X Register",
       "mnemonic" : "LDX",
       "code" : "0xBE",
-      "mode" : "Absolute,Y"
+      "mode" : "absY"
    },
    {
-      "mode" : "Immediate",
+      "mode" : "imm",
       "code" : "0xA0",
       "mnemonic" : "LDY",
       "description" : "Load Y Register",
@@ -613,66 +613,66 @@
       "code" : "0xA4",
       "bytes" : 2,
       "description" : "Load Y Register",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
       "description" : "Load Y Register",
       "bytes" : 2,
       "mnemonic" : "LDY",
       "code" : "0xB4",
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
       "mnemonic" : "LDY",
       "code" : "0xAC",
       "description" : "Load Y Register",
       "bytes" : 3,
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
       "bytes" : 3,
       "description" : "Load Y Register",
       "mnemonic" : "LDY",
       "code" : "0xBC",
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
-      "mode" : "Accumulator",
+      "mode" : "acc",
       "description" : "Logical Shift Right",
       "bytes" : 1,
       "code" : "0x4A",
       "mnemonic" : "LSR"
    },
    {
-      "mode" : "ZeroPage",
+      "mode" : "zpg",
       "mnemonic" : "LSR",
       "code" : "0x46",
       "description" : "Logical Shift Right",
       "bytes" : 2
    },
    {
-      "mode" : "ZeroPage,X",
+      "mode" : "zpgX",
       "description" : "Logical Shift Right",
       "bytes" : 2,
       "mnemonic" : "LSR",
       "code" : "0x56"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "code" : "0x4E",
       "mnemonic" : "LSR",
       "description" : "Logical Shift Right",
       "bytes" : 3
    },
    {
-      "mode" : "Absolute,X",
+      "mode" : "absX",
       "mnemonic" : "LSR",
       "code" : "0x5E",
       "description" : "Logical Shift Right",
       "bytes" : 3
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "description" : "No Operation",
       "bytes" : 1,
       "code" : "0xEA",
@@ -683,17 +683,17 @@
       "code" : "0x09",
       "bytes" : 2,
       "description" : "Logical Inclusive OR",
-      "mode" : "Immediate"
+      "mode" : "imm"
    },
    {
       "code" : "0x05",
       "mnemonic" : "ORA",
       "description" : "Logical Inclusive OR",
       "bytes" : 2,
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
-      "mode" : "ZeroPage,X",
+      "mode" : "zpgX",
       "code" : "0x15",
       "mnemonic" : "ORA",
       "description" : "Logical Inclusive OR",
@@ -704,31 +704,31 @@
       "mnemonic" : "ORA",
       "bytes" : 3,
       "description" : "Logical Inclusive OR",
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
-      "mode" : "Absolute,X",
+      "mode" : "absX",
       "description" : "Logical Inclusive OR",
       "bytes" : 3,
       "mnemonic" : "ORA",
       "code" : "0x1D"
    },
    {
-      "mode" : "Absolute,Y",
+      "mode" : "absY",
       "description" : "Logical Inclusive OR",
       "bytes" : 3,
       "mnemonic" : "ORA",
       "code" : "0x19"
    },
    {
-      "mode" : "(Indirect,X)",
+      "mode" : "xInd",
       "bytes" : 2,
       "description" : "Logical Inclusive OR",
       "mnemonic" : "ORA",
       "code" : "0x01"
    },
    {
-      "mode" : "(Indirect),Y",
+      "mode" : "indY",
       "description" : "Logical Inclusive OR",
       "bytes" : 2,
       "code" : "0x11",
@@ -739,17 +739,17 @@
       "mnemonic" : "PHA",
       "bytes" : 1,
       "description" : "Push Accumulator",
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "code" : "0x08",
       "mnemonic" : "PHP",
       "description" : "Push Processor Status",
       "bytes" : 1
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "bytes" : 1,
       "description" : "Pull Accumulator",
       "mnemonic" : "PLA",
@@ -760,17 +760,17 @@
       "bytes" : 1,
       "code" : "0x28",
       "mnemonic" : "PLP",
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
-      "mode" : "Accumulator",
+      "mode" : "acc",
       "mnemonic" : "ROL",
       "code" : "0x2A",
       "bytes" : 1,
       "description" : "Rotate Left"
    },
    {
-      "mode" : "ZeroPage",
+      "mode" : "zpg",
       "description" : "Rotate Left",
       "bytes" : 2,
       "code" : "0x26",
@@ -781,66 +781,66 @@
       "description" : "Rotate Left",
       "code" : "0x36",
       "mnemonic" : "ROL",
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
       "bytes" : 3,
       "description" : "Rotate Left",
       "mnemonic" : "ROL",
       "code" : "0x2E",
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
       "mnemonic" : "ROL",
       "code" : "0x3E",
       "bytes" : 3,
       "description" : "Rotate Left",
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
       "mnemonic" : "ROR",
       "code" : "0x6A",
       "description" : "Rotate Right",
       "bytes" : 1,
-      "mode" : "Accumulator"
+      "mode" : "acc"
    },
    {
       "bytes" : 2,
       "description" : "Rotate Right",
       "code" : "0x66",
       "mnemonic" : "ROR",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
-      "mode" : "ZeroPage,X",
+      "mode" : "zpgX",
       "code" : "0x76",
       "mnemonic" : "ROR",
       "bytes" : 2,
       "description" : "Rotate Right"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "bytes" : 3,
       "description" : "Rotate Right",
       "mnemonic" : "ROR",
       "code" : "0x6E"
    },
    {
-      "mode" : "Absolute,X",
+      "mode" : "absX",
       "description" : "Rotate Right",
       "bytes" : 3,
       "mnemonic" : "ROR",
       "code" : "0x7E"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "bytes" : 1,
       "description" : "Return from Interrupt",
       "code" : "0x40",
       "mnemonic" : "RTI"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "mnemonic" : "RTS",
       "code" : "0x60",
       "description" : "Return from Subroutine",
@@ -851,45 +851,45 @@
       "description" : "Subtract with Carry",
       "code" : "0xE9",
       "mnemonic" : "SBC",
-      "mode" : "Immediate"
+      "mode" : "imm"
    },
    {
       "mnemonic" : "SBC",
       "code" : "0xE5",
       "bytes" : 2,
       "description" : "Subtract with Carry",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
       "description" : "Subtract with Carry",
       "bytes" : 2,
       "mnemonic" : "SBC",
       "code" : "0xF5",
-      "mode" : "ZeroPage,X"
+      "mode" : "zpgX"
    },
    {
       "mnemonic" : "SBC",
       "code" : "0xED",
       "description" : "Subtract with Carry",
       "bytes" : 3,
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
       "code" : "0xFD",
       "mnemonic" : "SBC",
       "description" : "Subtract with Carry",
       "bytes" : 3,
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
-      "mode" : "Absolute,Y",
+      "mode" : "absY",
       "code" : "0xF9",
       "mnemonic" : "SBC",
       "bytes" : 3,
       "description" : "Subtract with Carry"
    },
    {
-      "mode" : "(Indirect,X)",
+      "mode" : "xInd",
       "code" : "0xE1",
       "mnemonic" : "SBC",
       "description" : "Subtract with Carry",
@@ -900,24 +900,24 @@
       "description" : "Subtract with Carry",
       "mnemonic" : "SBC",
       "code" : "0xF1",
-      "mode" : "(Indirect),Y"
+      "mode" : "indY"
    },
    {
       "description" : "Set Carry Flag",
       "bytes" : 1,
       "mnemonic" : "SEC",
       "code" : "0x38",
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
       "mnemonic" : "SED",
       "code" : "0xF8",
       "description" : "Set Decimal Flag",
       "bytes" : 1,
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "code" : "0x78",
       "mnemonic" : "SEI",
       "bytes" : 1,
@@ -928,17 +928,17 @@
       "bytes" : 2,
       "mnemonic" : "STA",
       "code" : "0x85",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
-      "mode" : "ZeroPage,X",
+      "mode" : "zpgX",
       "bytes" : 2,
       "description" : "Store Accumulator",
       "mnemonic" : "STA",
       "code" : "0x95"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "code" : "0x8D",
       "mnemonic" : "STA",
       "description" : "Store Accumulator",
@@ -949,17 +949,17 @@
       "description" : "Store Accumulator",
       "code" : "0x9D",
       "mnemonic" : "STA",
-      "mode" : "Absolute,X"
+      "mode" : "absX"
    },
    {
       "bytes" : 3,
       "description" : "Store Accumulator",
       "mnemonic" : "STA",
       "code" : "0x99",
-      "mode" : "Absolute,Y"
+      "mode" : "absY"
    },
    {
-      "mode" : "(Indirect,X)",
+      "mode" : "xInd",
       "description" : "Store Accumulator",
       "bytes" : 2,
       "mnemonic" : "STA",
@@ -970,38 +970,38 @@
       "description" : "Store Accumulator",
       "code" : "0x91",
       "mnemonic" : "STA",
-      "mode" : "(Indirect),Y"
+      "mode" : "indY"
    },
    {
       "bytes" : 2,
       "description" : "Store X Register",
       "mnemonic" : "STX",
       "code" : "0x86",
-      "mode" : "ZeroPage"
+      "mode" : "zpg"
    },
    {
-      "mode" : "ZeroPage,Y",
+      "mode" : "zpgY",
       "mnemonic" : "STX",
       "code" : "0x96",
       "bytes" : 2,
       "description" : "Store X Register"
    },
    {
-      "mode" : "Absolute",
+      "mode" : "abs",
       "mnemonic" : "STX",
       "code" : "0x8E",
       "bytes" : 3,
       "description" : "Store X Register"
    },
    {
-      "mode" : "ZeroPage",
+      "mode" : "zpg",
       "mnemonic" : "STY",
       "code" : "0x84",
       "description" : "Store Y Register",
       "bytes" : 2
    },
    {
-      "mode" : "ZeroPage,X",
+      "mode" : "zpgX",
       "mnemonic" : "STY",
       "code" : "0x94",
       "bytes" : 2,
@@ -1012,31 +1012,31 @@
       "description" : "Store Y Register",
       "mnemonic" : "STY",
       "code" : "0x8C",
-      "mode" : "Absolute"
+      "mode" : "abs"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "mnemonic" : "TAX",
       "code" : "0xAA",
       "description" : "Transfer Accumulator to X",
       "bytes" : 1
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "description" : "Transfer Accumulator to Y",
       "bytes" : 1,
       "mnemonic" : "TAY",
       "code" : "0xA8"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "bytes" : 1,
       "description" : "Transfer Stack Pointer to X",
       "mnemonic" : "TSX",
       "code" : "0xBA"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "bytes" : 1,
       "description" : "Transfer X to Accumulator",
       "code" : "0x8A",
@@ -1047,10 +1047,10 @@
       "bytes" : 1,
       "mnemonic" : "TXS",
       "code" : "0x9A",
-      "mode" : "Implied"
+      "mode" : "impl"
    },
    {
-      "mode" : "Implied",
+      "mode" : "impl",
       "description" : "Transfer Y to Accumulator",
       "bytes" : 1,
       "mnemonic" : "TYA",
